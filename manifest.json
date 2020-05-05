@@ -3,17 +3,17 @@
   "name": "Donald John Trump",
   "icons": [
     {
-      "src": "/assets/images/favicon-192x192.png",
+      "src": "/homepage/assets/images/favicon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/assets/images/favicon-512x512.png",
+      "src": "/homepage/assets/images/favicon-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "/homepage/index.html",
   "background_color": "white",
   "display": "standalone",
   "scope": "/homepage/",
