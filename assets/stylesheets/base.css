@@ -603,6 +603,12 @@ article {
 .contacts li a.telegram:hover {
   color: #0088cc;
 }
+.contacts li a.twitter:hover {
+  color: #1DA1F2;
+}
+.contacts li a.instagram:hover {
+  color: #833AB4;
+}
 .contacts li a.phone:hover {
   color: dimgrey;
 }
