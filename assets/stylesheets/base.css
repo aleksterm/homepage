@@ -51,6 +51,7 @@ h1 {
   font-weight: 900;
   font-size: 1.5rem;
   margin-bottom: 0;
+  color: #a5762c;
 }
 h2 {
   font-weight: 900;
@@ -74,7 +75,7 @@ h5 {
   font-size: 1rem;
 }
 h6 {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin: 0 0 1em 0;
@@ -195,6 +196,7 @@ button {
 button,
 [type="button"] {
   -webkit-appearance: button;
+  -moz-appearance: button;
   appearance: button;
 }
 
@@ -630,6 +632,9 @@ article {
   .contacts li {
     margin-right: 0;
   }
+  .contacts li a {
+    padding: 16px 0;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .contacts {
@@ -694,6 +699,12 @@ details > div:after {
 .details > label.summary {
   cursor: pointer;
 }
+.details > label.summary > span {
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
 .details > input:checked ~ div {
   display: block;
 }
@@ -725,6 +736,7 @@ div.details > input:first-child + label + .details-body {
 /* Details as a list item */
 li.details {
   list-style-type: none;
+  margin: 0 0 1em 0;
 }
 li.details:before {
   display: none;
