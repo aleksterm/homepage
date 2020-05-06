@@ -292,12 +292,19 @@
       <em>MAKE RESUME GREAT AGAIN!</em>
     </footer>
     <script>
-      var electionDate = new Date("2017-01-20");
+      var inaugurationDate = new Date("2017-01-20");
       var todaysDate = new Date();
-      // var monthsOfPresidence = todaysDate.getMonth() - electionDate.getMonth() + (12 * (todaysDate.getFullYear() - electionDate.getFullYear()));
-      // document.getElementById("presidence-months").innerHTML = monthsOfPresidence + " month" + (monthsOfPresidence === 1 ? "" : "s") + " already";
-      var daysOfPresidence = Math.ceil((todaysDate - electionDate) / (1000 * 3600 * 24));
+      var daysOfPresidence = Math.ceil((todaysDate - inaugurationDate) / (1000 * 3600 * 24));
+     
       document.getElementById("presidence-days").innerHTML = daysOfPresidence + " day" + (daysOfPresidence === 1 ? "" : "s") + " already";
+
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
     </script>
   </body>
 </html>
