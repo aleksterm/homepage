@@ -292,9 +292,9 @@
       <em>MAKE RESUME GREAT AGAIN!</em>
     </footer>
     <script>
-      var inaugurationDate = new Date("2017-01-20");
-      var todaysDate = new Date();
-      var daysOfPresidence = Math.ceil((todaysDate - inaugurationDate) / (1000 * 3600 * 24));
+      const inaugurationDate = new Date("2017-01-20");
+      const todaysDate = new Date();
+      const daysOfPresidence = Math.ceil((todaysDate - inaugurationDate) / (1000 * 3600 * 24));
      
       document.getElementById("presidence-days").innerHTML = daysOfPresidence + " day" + (daysOfPresidence === 1 ? "" : "s") + " already";
 
